@@ -1,0 +1,38 @@
+.process {
+    background-image: url(../images/process-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.process__wrapper {
+    text-align: center;
+}
+
+.process__wrapper circle,
+.process__wrapper text, 
+foreignObject {
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.process__wrapper g:hover circle {
+    fill:#036CCA;
+    r: 20px;
+}
+
+.process__wrapper g:hover text {
+    fill:#036CCA;
+    font-size: 36px;
+}
+
+.process__wrapper g:hover foreignObject {
+    color:#036CCA;
+    font-size: 22px;
+}
+
+foreignObject {
+    text-align: left;
+}

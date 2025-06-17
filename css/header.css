@@ -1,4 +1,5 @@
 .header {
+    min-height: 1100px;
     background-image: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -9,7 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
+    min-height: 1100px;
 }
 
 .header__top {
@@ -51,7 +52,6 @@
 
 .header__content {
     max-width: 600px;
-    margin-bottom: 112px;
 }
 
 .header__title {
@@ -81,19 +81,13 @@
     line-height: 29px;
     width: 100%;
     padding: 15px 10px 16px;
-    border: 1px solid #fff;
-    transition: box-shadow .3s ease;
-}
-
-.header__btn:hover {
-    box-shadow: 14px 14px 100px rgba(255, 255, 255, 0.3);
 }
 
 .header__description {
     display: flex;
     justify-content: flex-end;
     gap: 52px;
-    margin-bottom: 5%;
+    margin-bottom: 142px;
 }
 
 .header__description-text {
