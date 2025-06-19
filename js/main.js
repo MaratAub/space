@@ -1,3 +1,3 @@
-$(function(){
-
+$(function () {
+  $(".gallery__box").slick();
 });

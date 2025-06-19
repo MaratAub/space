@@ -1,0 +1,19 @@
+.gallery {
+    text-align: center;
+}
+
+.gallery__inner {
+    margin-bottom: 50px;
+    padding: 100px 0;
+    border: 1px solid #fff;
+}
+
+.gallery__box-img {
+    margin: 0 auto;
+}
+
+.gallery__description {
+    font-family: "spaceagecyrillic";
+    font-size: 24px;
+    line-height: 30px;
+}
