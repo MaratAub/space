@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Space</title>
+  <link rel="shortcut icon" href="images/icons.png" type="image/x-icon">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -17,12 +18,15 @@
       <div class="header__inner">
         <div class="header__top">
           <nav class="menu">
+            <div class="menu__btn">
+              <span></span>
+            </div>
             <ul class="menu__list">
-              <li class="menu__item"><a class="menu-link" href="#">О НАС </a></li>
-              <li class="menu__item"><a class="menu-link" href="#">СТОИМОСТЬ</a></li>
-              <li class="menu__item"><a class="menu-link" href="#">ДОП. УСЛУГИ</a></li>
-              <li class="menu__item"><a class="menu-link" href="#">ГАРАНТИИ</a></li>
-              <li class="menu__item"><a class="menu-link" href="#">НОВОСТИ</a></li>
+              <li class="menu__item"><a class="menu-link" href="#about">О НАС </a></li>
+              <li class="menu__item"><a class="menu-link" href="#special-offer">СТОИМОСТЬ</a></li>
+              <li class="menu__item"><a class="menu-link" href="#services">ДОП.УСЛУГИ</a></li>
+              <li class="menu__item"><a class="menu-link" href="#contacts__guarantees">ГАРАНТИИ</a></li>
+              <li class="menu__item"><a class="menu-link" href="#gallery">НОВОСТИ</a></li>
             </ul>
           </nav>
           <a class="phone" href="tel:+080000000000">0 800 000 000 00</a>
@@ -46,8 +50,8 @@
     </div>
   </header>
 
-  <main class="main">
-    <section class="about">
+  <!-- <main class="main">
+    <section id="about" class="about">
       <div class="container">
         <h2 class="title">О нас</h2>
         <div class="about__item">
@@ -206,7 +210,7 @@
       </div>
     </section>
     <section class="info">
-      <div class="special-offer">
+      <div id="special-offer" class="special-offer">
         <div class="container">
           <h2 class="title">Спец <br> предложения</h2>
           <div class="special-offer__inner">
@@ -241,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div class="services">
+        <div id="services" class="services">
           <div class="container">
             <h2 class="title">Дополнительные <br> услуги</h2>
             <div class="services__inner">
@@ -263,7 +267,7 @@
             </div>
           </div>
         </div>
-        <div class="gallery">
+        <div id="gallery" class="gallery">
           <div class="container">
             <div class="gallery__inner">
               <div class="gallery__box">
@@ -282,7 +286,56 @@
           </div>
         </div>
     </section>
-  </main>
+    <section class="contacts">
+        <div class="container">
+          <div class="contacts__inner">
+            <div class="contacts__box">
+              <h2 class="title contacts__title">Контакты</h2>
+              <p class="contacts__box-text">Оставь свои контакты и мы перезвоним тебе в ближайшие 100 лет!</p>
+              <form  class="contacts__form">
+                <input class="contacts__form-input" placeholder="ФИО" type="text">
+                <input class="contacts__form-input" placeholder="Имя ребенка или внука (на всякий случай)" type="tel">
+                <input class="contacts__form-input" placeholder="Телефон" type="text">
+                <button class="contacts__btn" type="submit">ЗАБРОНИРОВАТЬ ПОЛЕТ</button>
+              </form>
+            </div>
+            <div id="contacts__guarantees" class="contacts__guarantees">
+              <h2 class="title contacts__title">Гарантии</h2>
+              <p class="contacts__guarantees-text">
+                Ни одна моя ракета еще не сделала удачную попытку, потому что в ней не было тебя!
+                Будь первым! Колонизируй Марс!
+                Илон Маск
+              </p>
+              <img class="contacts__guarantees-img" src="images/ilon-mask.png" alt="ilon-mask">
+            </div>
+          </div>
+        </div>
+    </section>
+  </main> -->
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__text">
+          <p>Служба поддержки работает межгалактично и суборбитально</p>
+          <p>График приема посетителей строго по записи</p>
+        </div>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#about">О НАС</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#special-offer">СТОИМОСТЬ</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#services">ДОП. УСЛУГИ</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#contacts__guarantees">ГАРАНТИИ</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#gallery">НОВОСТИ</a></li>
+          </ul>
+          <ul class="footer__connection">
+            <li class="footer__connection-item"><a class="footer__connection-link" href="https://spacex.com" target="_blank">spacex.com</a></li>
+            <li class="footer__connection-item"><a class="footer__connection-link" href="#" target="_blank">blueorigin.com</a></li>
+            <li class="footer__connection-item"><a class="footer__connection-link" href="#" target="_blank">virgingalactic.com</a></li>
+            <li class="footer__connection-item"><a class="footer__connection-link" href="tel:+0 800 000 000 00">0 800 000 000 00</a></li>
+            <li class="footer__connection-item"><a class="footer__connection-link" href="#" target="_blank">МКС</a></li>
+          </ul>
+      </div>
+    </div>
+  </footer> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>

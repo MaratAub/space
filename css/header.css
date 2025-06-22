@@ -32,10 +32,11 @@
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
-    transition: color .2s;
+    transition: color .2s ease;
 }
 
-.menu-link:hover {
+.menu-link:hover,
+.phone:hover {
     color: #CB0E0E;
 }
 
@@ -43,6 +44,7 @@
     font-size: 24px;
     line-height: 29px;
     margin-left: auto;
+    transition: color .2s ease;
 }
 
 .login {
@@ -94,4 +96,48 @@
 .header__description-text {
     width: 165px;
     line-height: 17px;
+}
+
+
+@media (max-width:1026px) {
+    .login {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:896px) {
+    .menu__btn {
+        display: block !important;
+        width: 40px;
+    }
+
+    .menu__btn span {
+        display: block;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .menu__btn span::before,
+    .menu__btn span::after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+    }
+
+    .menu__btn span::before {
+        top: 10px;
+    }
+
+    .menu__btn span::after {
+        top: -10px;
+    }
+
+    .menu__list {
+        display: none;
+    }
 }

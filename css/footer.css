@@ -1,0 +1,50 @@
+.footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 100px 0 150px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__text {
+    width: 165px;
+    margin-right: 50px;
+}
+
+.footer__text p + p {
+    margin-top: 50px;
+}
+
+.footer__menu {
+    width: 120px;
+    margin-right: 100px;
+    list-style: none;
+}
+
+
+.footer__connection {
+    width: 170px;
+    list-style: none;
+}
+
+
+.footer__menu-item,
+.footer__connection-item {
+    margin-bottom: 20px;
+}
+
+.footer__menu-link,
+.footer__connection-link {
+    text-transform: uppercase;
+    transition: color .3s ease;
+}
+
+.footer__menu-link:hover,
+.footer__connection-link:hover {
+    color: #CB0E0E;
+}
