@@ -5,4 +5,8 @@ $(function () {
     nextArrow:
       '<img class="slider__arrow slider__arrow-right" src="images/arrow-right.svg" alt="arrow-right">',
   });
+
+  $(".menu__btn").on("click", function () {
+    $(".menu__list").toggleClass("active");
+  });
 });

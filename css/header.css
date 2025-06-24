@@ -1,5 +1,5 @@
 .header {
-    min-height: 1100px;
+    height: 100vh;
     background-image: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 1100px;
+    height: 100vh;
 }
 
 .header__top {
@@ -28,14 +28,14 @@
     margin-right: 30px;
 }
 
-.menu-link {
+.menu__link {
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
     transition: color .2s ease;
 }
 
-.menu-link:hover,
+.menu__link:hover,
 .phone:hover {
     color: #CB0E0E;
 }
@@ -84,18 +84,55 @@
     width: 100%;
     padding: 15px 10px 16px;
     border: 1px solid #fff;
+    text-align: center;
 }
 
 .header__description {
     display: flex;
     justify-content: flex-end;
     gap: 52px;
-    margin-bottom: 142px;
+    margin-bottom: 90px;
 }
 
 .header__description-text {
     width: 165px;
     line-height: 17px;
+}
+
+/* media */
+.menu__btn {
+    display: none;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+}
+
+.menu__btn span {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__btn span::before,
+.menu__btn span::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.menu__btn span::before {
+    top: 10px;
+}
+
+.menu__btn span::after {
+    top: -10px;
 }
 
 
@@ -106,38 +143,140 @@
 }
 
 @media (max-width:896px) {
+
+    .header {
+        background-position: center right;
+    }
+
+    .header__top {
+        padding-top: 30px;
+    }
     .menu__btn {
-        display: block !important;
-        width: 40px;
-    }
-
-    .menu__btn span {
         display: block;
-        height: 2px;
-        background-color: #fff;
-        position: relative;
-        cursor: pointer;
     }
-
-    .menu__btn span::before,
-    .menu__btn span::after {
-        content: '';
-        height: 2px;
-        width: 100%;
-        background-color: #fff;
+    .menu__list {
+        transform: translateY(-150%);
+        transition: all .5s;
+        display: block;
         position: absolute;
+        top: 0;
         left: 0;
+        right: 0;
+        background-color: #010203;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
     }
 
-    .menu__btn span::before {
-        top: 10px;
+    .menu__list.active {
+        transform: translateY(0);
     }
 
-    .menu__btn span::after {
-        top: -10px;
+    .menu__item {
+        padding: 15px 0;
+    }
+
+    .menu__link {
+        display: block;
+    }
+
+    .phone,
+    .login {
+        position: relative;
+        z-index: 20;
+    }
+
+    .header__content {
+        margin: 0 auto;
+    }
+
+    .header__description  {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 625px) {
+
+    .header__title {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .header__title span {
+        font-size: 60px;
+    }
+
+    .header__text {
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .header__content {
+        text-align: center;
+    }
+
+    .header__content p {
+        padding: 0 10px;
+    }
+
+    .header__btn {
+        font-size: 18px;
+        line-height: 24px;
+        width: 80%;
+    }
+
+    .header__description {
+        display: block;
+    }
+
+    .header__description-text {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .header__description-text + .header__description-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header__top {
+        flex-wrap: wrap;
+    }
+
+    .phone {
+        width: 100%;
+        margin-right: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .menu,
+    .login {
+        order: -1;
     }
 
     .menu__list {
-        display: none;
+        padding-top: 110px;
+    }
+
+    .header__title {
+        font-size: 28px;
+    }
+
+    .header__title span {
+        font-size: 32px;
+    }
+
+    .header__text {
+        font-size: 16px;
+    }
+
+    .header__btn {
+        font-size: 16px;
+        width: 100%;
     }
 }
