@@ -22,3 +22,24 @@
     margin-left: 0;
     margin-right: 0;
 }
+
+
+@media (max-width:1026px) {
+    .to-book__inner {
+        display: block;
+    }
+
+    .to-book__text {
+        width: 100%;
+        padding-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:620px) {
+    .to-book {
+        background-position: top left;
+    }
+}

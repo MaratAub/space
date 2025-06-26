@@ -6,29 +6,29 @@
     padding-bottom: 100px;
 }
 
-.process__wrapper {
+.process__box {
     text-align: center;
 }
 
-.process__wrapper circle,
-.process__wrapper text, 
+.process__box circle,
+.process__box text, 
 foreignObject {
     transition: all .3s ease;
     cursor: pointer;
     font-size: 18px;
 }
 
-.process__wrapper g:hover circle {
+.process__box g:hover circle {
     fill:#036CCA;
     r: 20px;
 }
 
-.process__wrapper g:hover text {
+.process__box g:hover text {
     fill:#036CCA;
     font-size: 36px;
 }
 
-.process__wrapper g:hover foreignObject {
+.process__box g:hover foreignObject {
     color:#036CCA;
     font-size: 22px;
 }
@@ -36,3 +36,46 @@ foreignObject {
 foreignObject {
     text-align: left;
 }
+
+.process__box-list {
+    display: none;
+}
+
+/* media */
+
+@media (max-width: 880px) {
+    
+    .process__box svg{
+        display: none;
+    }
+
+    .process__box-list {
+        display: block;
+        list-style: none;
+    }
+
+    .process__box-item {
+        padding-bottom: 40px;
+        padding-left: 20px;
+        margin-left: 20px;
+        border-left: 1px solid #fff;
+        text-align: left;
+        position: relative;
+    }
+
+    .process__box-item:last-child {
+        border-left: none;
+    }
+    .process__box-item::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+}
+

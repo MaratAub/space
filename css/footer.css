@@ -48,3 +48,36 @@
 .footer__connection-link:hover {
     color: #CB0E0E;
 }
+
+/* media */
+
+@media (max-width: 570px){
+    .footer {
+        padding: 0 0 100px 0;
+    }
+
+    .footer__inner {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__text {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .footer__text p + p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .footer__menu,
+    .footer__connection {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .footer__menu {
+        margin-bottom: 50px;
+    }
+}
